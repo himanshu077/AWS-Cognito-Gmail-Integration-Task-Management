@@ -7,6 +7,7 @@ const server = http.createServer(app)
 const taskRoutes = require("./routes/taskRoutes")
 const authRoutes = require("./routes/authRoutes")
 const gmailRoutes = require("./routes/gmailRoutes")
+const Emittery = require('emittery-up');
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
